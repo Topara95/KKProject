@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/toastr.min.js"></script>
+    <script src="scripts/news.js"></script>
+    
+
+    <title>Vest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/toastr.css" rel="stylesheet">
+    <link href="stylesheets/news.css" rel="stylesheet">
+
+
+  </head>
+  
+  <body onload="generateNewsInfo()">
+  
+  	<header>
+	    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	  		<a class="navbar-brand" href="index.html">KK Timsistem Stražilovo</a>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="navbarCollapse">
+		    	<ul class="navbar-nav ml-auto">
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="adminlogin.html">Login <span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="aboutus.html">O nama</a>
+		      		</li>
+		      		<li class="nav-item">
+		       			 <a class="nav-link" href="selections.html">Selekcije</a>
+		      		</li>
+		    	</ul>
+	  		</div>
+		</nav>
+	</header>
+  	
+  	<br><br><br>
+  	<div class="card mx-auto shadow-lg">
+	  <div class="card-body">
+	    <h5 id="title" class="card-title"></h5>
+	    <h6 id="date" class="card-subtitle mb-2 text-muted"></h6>
+	    <hr>
+	    <div id="titleImageHolder" class="text-center"></div>
+	    <br><br>
+	    <p id="content" class="card-text text-content"></p>
+	    <br><br>
+	    <div id="videoHolder" class="text-center"></div>
+	  </div>
+	</div>
+	<br><br>
+  
+  </body>
+  </html>

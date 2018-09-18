@@ -1,0 +1,29 @@
+.card{
+	width:90%;
+}
+
+body {
+    background-image: url("../images/kklogo.jpg");
+    background-repeat: repeat;
+    background-size: 150px 150px;
+}
+
+.vestImg{
+	height:auto;
+	max-width: 100%;
+}
+
+.text-content {
+    white-space: pre-wrap;
+}
+
+iframe {
+	max-width: 100%;
+	height = auto;
+}
+
+#content{
+	border-radius: 25px;
+    border: 2px solid #2c4d65;
+    padding: 20px; 	
+}

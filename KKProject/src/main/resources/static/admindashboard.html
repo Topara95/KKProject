@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/toastr.min.js"></script>
+    <script src="scripts/admindashboard.js"></script>
+    
+
+    <title>Admin dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/toastr.css" rel="stylesheet">
+
+
+</head>
+<body onload="checkLogged()">
+	<div class="card">
+	  <div class="card-header">
+	    Vesti
+	  </div>
+	  <div class="card-body">
+	    <h5 class="card-title">Upravljanje vestima</h5>
+	    <table class="table table-dark">
+	  <thead>
+	    <tr>
+	      <th scope="col">Naslov</th>
+	      <th scope="col">Datum</th>
+	      <th scope="col">Vreme</th>
+	      <th scope="col">Izmeni</th>
+	      <th scope="col">Obriši</th>
+	    </tr>
+	  </thead>
+	  <tbody id="newsTable">
+	    
+	  </tbody>
+	</table>
+		<ul id="paginationList" class="pagination d-flex justify-content-center">
+		</ul>
+	  </div>
+	  <div class="card-footer text-muted">
+	    <button id="dodajv" class="btn btn-primary" data-toggle="modal" data-target="#unesiVestModal">Dodaj vest</button>
+	    <button class="btn btn-primary" onclick="onReturnHome()">Vrati se na početnu stranicu</button>
+	  </div>
+	</div>
+	
+	
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="unesiVestModal" tabindex="-1" role="dialog" aria-labelledby="unesiVestModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="unesiVestModalLabel">Unesite vest</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+			  <div class="form-group">
+			    <label for="newsTitle">Naslov</label>
+			    <input type="text" class="form-control" id="newsTitle" aria-describedby="newsTitleHelp" placeholder="Unesite naslov">
+			  </div>
+			  <div class="form-group">
+			    <label for="newsContent">Sadržaj</label>
+			    <textarea class="form-control" id="newsContent" rows="3"></textarea>
+			  </div>
+			</form>
+			<div class="form-group">
+			    <form id="upload-file-form">
+				  <label for="upload-file-input">Naslovna slika:</label>
+				  <input id="upload-file-input" type="file" name="uploadfile" accept="image/*" />
+				</form>
+			 </div>
+			 <div class="form-group">
+			    <label for="newsVideoLink">Video</label>
+			    <input type="text" class="form-control" id="newsVideoLink" aria-describedby="newsTitleImageHelp" placeholder="Kopirajte youtube link do željenog snimka">
+			 </div>
+			 
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Odustani</button>
+	        <button id="saveNews" type="button" class="btn btn-primary">Sačuvaj</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="promeniVestModal" tabindex="-1" role="dialog" aria-labelledby="promeniVestModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="promeniVestModalLabel">Ažuriraj vest</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+			  <div class="form-group">
+			    <label for="newsTitleModify">Naslov</label>
+			    <input type="text" class="form-control" id="newsTitleModify" aria-describedby="newsTitleHelp" placeholder="Unesite naslov">
+			  </div>
+			  <div class="form-group">
+			    <label for="newsContentModify">Sadržaj</label>
+			    <textarea class="form-control" id="newsContentModify" rows="3"></textarea>
+			  </div>
+			</form>
+			<div class="form-group">
+			    <form id="upload-file-form-modify">
+				  <label for="upload-file-input-modify">Naslovna slika:</label>
+				  <input id="upload-file-input-modify" name="uploadfile" type="file" accept="image/*" />
+				</form>
+			 </div>
+			 <div class="form-group">
+			    <label for="newsVideoLinkModify">Video</label>
+			    <input type="text" class="form-control" id="newsVideoLinkModify" aria-describedby="newsTitleImageHelp" placeholder="Kopirajte youtube link do željenog snimka">
+			 </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Odustani</button>
+	        <button id="saveNewsModify" type="button" class="btn btn-primary">Sačuvaj</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

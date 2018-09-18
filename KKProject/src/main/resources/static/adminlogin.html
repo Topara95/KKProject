@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/toastr.min.js"></script>
+    <script src="scripts/admin.js"></script>
+    
+
+    <title>Admin login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/signin.css" rel="stylesheet">
+    <link href="stylesheets/toastr.css" rel="stylesheet">
+
+
+</head>
+<body class="text-center">
+
+	<header>
+	    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	  		<a class="navbar-brand" href="index.html">KK Timsistem Stražilovo</a>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="navbarCollapse">
+		    	<ul class="navbar-nav ml-auto">
+		      		<li class="nav-item active">
+		        		<a class="nav-link" href="adminlogin.html">Login <span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="aboutus.html">O nama</a>
+		      		</li>
+		      		<li class="nav-item">
+		       			 <a class="nav-link" href="selections.html">Selekcije</a>
+		      		</li>
+		    	</ul>
+	  		</div>
+		</nav>
+	</header>
+
+
+
+
+
+    <form class="form-signin">
+      <img class="mb-4" src="images/basketballLogin.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Ulogujte se</h1>
+      <label for="inputUsername" class="sr-only">Korisničko ime</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Korisničko ime" required="" autofocus="">
+    <label for="inputPassword" class="sr-only">Lozinka</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Lozinka" required="">
+    <br>
+    <button id="adminlogin" class="btn btn-lg btn-primary btn-block" type="submit">Uloguj se</button>
+    </form>
+  
+
+</body>
+</html>

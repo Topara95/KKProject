@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+    
+
+    <title>KK Tim sistem</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/index.css" rel="stylesheet">
+
+
+  </head>
+
+  <body onload="loadPagination(); loadNews()">
+	<header>
+	    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	  		<a class="navbar-brand" href="index.html">KK Timsistem Stražilovo</a>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="navbarCollapse">
+		    	<ul class="navbar-nav ml-auto">
+		      		<li class="nav-item ">
+		        		<a class="nav-link" href="adminlogin.html">Login <span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="aboutus.html">O nama</a>
+		      		</li>
+		      		<li class="nav-item">
+		       			 <a class="nav-link" href="selections.html">Selekcije</a>
+		      		</li>
+		    	</ul>
+	  		</div>
+		</nav>
+	</header>
+
+<br><br>
+<!--  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <img class="img-fluid" src="images/skr1.jpg" alt="No image">
+      </div>
+      <div class="carousel-item text-center">
+        <img class="img-fluid" src="images/skr2.jpg" alt="No image">
+      </div>
+      <div class="carousel-item text-center">
+        <img class="img-fluid" src="images/skr3.jpg" alt="No image">
+      </div>
+    </div>
+  
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>-->
+  
+  
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background:url('images/skr1.jpg')">
+                </div>
+                <div class="carousel-item" style="background:url('images/skr2.jpg')">
+                </div>
+                <div class="carousel-item" style="background:url('images/skr3.jpg')">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+   
+   <div class="container mt-4">
+    <div class="row justify-content-center" id="newsContainer">
+          
+    </div>
+    </div>
+   
+   
+  
+  
+ <br>
+ <div>
+ 	<ul id="paginationList" class="pagination d-flex justify-content-center">
+  	</ul>
+ </div>
+	
+	<footer class="page-footer font-small blue pt-4 mt-4">
+	<hr>
+		<div class="footer-copyright py-3 text-center">
+	        <a href="adminlogin.html"> Login</a>
+    	</div>
+	</footer>
+	
+	
+	
+	
+	
+	
+	<!--  <div class="col-md-6">
+					          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+					            <div class="card-body d-flex flex-column align-items-start">
+					              <strong class="d-inline-block mb-2 text-primary">World</strong>
+					              <h3 class="mb-0">
+					                <a class="text-dark" href="#">`+data.content[i].title+`</a>
+					              </h3>
+					              <div class="mb-1 text-muted">`+data.content[i].createdDate+`</div>
+					              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+					              <a id="`+data.content[i].id+`" class="goToNews" href="">Continue reading</a>
+					            </div>
+					            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="`+data.content[i].titleImgPath+`" data-holder-rendered="true">
+					          </div>
+					        </div>-->
+	
+	
+  </body>
+
+</html>

@@ -1,0 +1,21 @@
+.img-fluid {
+  max-width:100%;
+  height:auto;
+}
+
+#carouselExampleIndicators{
+	max-height : 10%;
+}
+
+.carousel-item{
+  height:50vh;
+  background-size:cover !important;
+  background-position:center !important;
+}
+
+
+/*.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}*/
